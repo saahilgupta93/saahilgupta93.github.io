@@ -4,16 +4,100 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Yiotis Kaltsikis, Front End Developer based in Berlin, Germany">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript, web, design, development, websites, sites, portfolio, responsive, Yiotis Kaltsikis, front end, Giotis">
-    <title>Yiotis Kaltsikis | Front End Developer</title>
+    <meta name="description" content="Portfolio of Prakhar Thapak,Data Scientist based in Bangalore, India">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, data science, tensorflow, development, machine learning, sites, portfolio, deep learning,Artificial intelligence , Prakhar Thapak, NLP, Computer Vision">
+    <title>Prakhar Thapak | Data Scientist</title>
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+   
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="ext/css/ionicons.min.css" rel="stylesheet">
     <link href="res/css/styles.css" rel="stylesheet">
+	<style>
+	.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+</style>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+</script>
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
@@ -45,11 +129,7 @@
                                 <span class="ion-navicon nav-open"></span>
                                 <span class="ion-android-close nav-close"></span>
                             </button>
-                            <a class="navbar-brand nav-link logo" href="#main-header">
-                                <img class="logo-img logo-white" src="res/img/logo_white.png" alt="Yiotis logo white" />
-                                <img class="logo-img logo-dark" src="res/img/logo_dark.png" alt="Yiotis logo black" />
-                                Yiotis
-                            </a>
+                            
                         </div>
 
                         <div class="collapse navbar-collapse" id="main-nav">
@@ -64,16 +144,16 @@
                 </nav>
                 <div class="overlay"></div>
                 <div class="welcome-box">
-                    <p>Welcome to my digital home, I'm Yiotis.</p>
-                    <h1>Front end developer</h1>
+                    <p>Hi, I'm Prakhar.</p>
+                    <h1>Data Scientist</h1>
                 </div>
                 <nav class="social-nav">
                     <h6><span class="sr-only">Social navigation</span></h6>
                     <ul class="nav invisible">
-                        <li><a class="social-btn social-fb" href="https://www.facebook.com/yiotiskal" target="_blank"><span class="ion-social-facebook"></span></a></li>
-                        <li><a class="social-btn social-linkedin" href="https://www.linkedin.com/in/giotis-kaltsikis-846013b7" target="_blank"><span class="ion-social-linkedin"></span></a></li>
-                        <li><a class="social-btn social-github" href="https://github.com/giotiskl" target="_blank"><span class="ion-social-github"></span></a></li>
-                        <li><a class="social-btn social-email" href="mailto:yiotiskal@gmail.com"><span class="ion-ios-email"></span></a></li>
+                        
+                        <li><a class="social-btn social-linkedin" href="https://www.linkedin.com/in/prakhar-thapak/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+                        <li><a class="social-btn social-github" href="https://github.com/assassinsurvivor/" target="_blank"><span class="ion-social-github"></span></a></li>
+                        <li><a class="social-btn social-email" href="mailto:prakharthapak@gmail.com"><span class="ion-ios-email"></span></a></li>
                     </ul>
                 </nav>
             </header>
@@ -96,7 +176,7 @@
                     <div class="col-md-6 feats-container">
                         <section>
                             <h3><span class="ion-ios-glasses-outline icon-header"></span>Who I am</h3>
-                            <p>Hello, my name is Yiotis Kaltsikis. I am a JavaScript developer working for <a href="https://comatch.com" target="_blank" rel="noopener noreferrer">Comatch GmbH</a>, in Berlin, Germany. Since the age of 13, I have delved into numerous programming languages. My interest in designing and developing engaging user interfaces is what drove me to specialise in Frontend Development.</p>
+                            <p>Hello, my name is Prakhar Thapak. I am a data scientist based in Bangalore, India. Since the age of 15, I have delved into numerous programming languages. My interest lies in deep learning and natural language processing.</p>
                         </section>
                     </div>
                     <div class="col-md-6 feat-bg bg-me hidden-xs hidden-sm invisible"></div>
@@ -108,7 +188,7 @@
                     <div class="col-md-6 feats-container">
                         <section>
                             <h3><span class="ion-ios-color-wand-outline icon-header"></span>What I do</h3>
-                            <p>I offer frontend solutions, making using of cutting edge technologies. I like mobile-first responsive design, progressive enhancement and single page applications. I find the process of shaping an online identity through engaging user interaction fascinating. Since an image is worth a thousand words, scroll down to my portfolio for a few thousands words worth of images.</p>
+                            <p>I solve complex business problems by making use of state of the art machine learning techniques. I also like developing engaging user interfaces . I find the process of shaping an online identity through engaging user interaction fascinating. Since an image is worth a thousand words, scroll down to my portfolio for a few thousands words worth of images.</p>
                         </section>
                     </div>
                 </div>
@@ -118,10 +198,10 @@
                         <section>
                             <h3><span class="ion-ios-list-outline icon-header"></span>Neat facts</h3>
                             <ul class="list-unstyled">
-                                <li><span class="color-main">Coding:</span> Apart from HTML, CSS and JS at times I've worked with Node.JS, C/C++, C#, Java (samples on GitHub) and native Android.</li>
-                                <li><span class="color-main">Education:</span> My Bachelors grade is 8.46/10. My final paper was on <em>The Dying Animal</em> by Philip Roth.</li>
-                                <li><span class="color-main">Hobbies:</span> I play the guitar, love the blues. I'm a casual gamer, huge RPG fan. I also love literature and philosophy, my favourite author is Philip Roth.</li>
-                                <li><span class="color-main">Languages:</span> I speak and write Greek, English and German!</li>
+                                <li><span class="color-main">Coding:</span> Apart from Python,C++ and JS at times I've worked with Ruby and Node.js.</li>
+                                <li><span class="color-main">Cryptography:</span>I am very much interested in cryptography and have used elliptic curve cryptography as well as various techniques for my project <em>Visual color cryptography using elliptic curves</em></li>
+                                <li><span class="color-main">Hobbies:</span> I play chess. I'm a casual gamer, huge GTA and Assassin creed fan.</li>
+                                <li><span class="color-main">Languages:</span> I speak and write English,Hindi and decent in French!</li>
                             </ul>
                         </section>
                     </div>
@@ -137,36 +217,58 @@
                 <div class="row">
                     <h2>My tools</h2>
                 </div>
-                <div class="row">
-                    <section class="col-sm-4 skill-box">
-                        <div class="row">
-                            <h3><span class="ion-social-html5-outline icon-header"></span>HTML5</h3>
-                            <p>HTML is the foundation of a good website. I make use of HTML semantics to improve screen-reader accessibility and SEO. I always make sure my markup is W3C validated.</p>
-                        </div>
-                    </section>
-                    <section class="col-sm-4 skill-box">
-                        <div class="row">
-                            <h3><span class="ion-social-css3-outline icon-header"></span>CSS3</h3>
-                            <p>I use SASS for my CSS. I aim for well-organized non-repetitive stylesheets. I use Bootstrap, as the starting point for my designs and take it from there with custom modifications.</p>
-                        </div>
-                    </section>
-                    <section class="col-sm-4 skill-box">
-                        <div class="row">
-                            <h3><span class="ion-social-javascript-outline icon-header"></span>JavaScript</h3>
-                            <p>JS is a language of many quirks, my knowledge in lower-level languages has helped me comprehend its mechanics. I employ ReactJS and Redux, with a functional approach, to deliver demanding frontend solutions.</p>
-                        </div>
-                    </section>
-                </div>
+                
 
-                <div class="row">
-                    <ul class="libs-showcase clearfix">
-                        <li><img class="js-tool-logo invisible" id="angular-logo" src="res/img/angular-logo.png" alt="AngularJS logo"></li>
-                        <li><img class="js-tool-logo invisible" id="sass-logo" src="res/img/sass-logo.png" alt="Sass logo"></li>
-                        <li><img class="js-tool-logo invisible" id="jquery-logo" src="res/img/jquery-logo.svg" alt="jQuery logo"></li>
-                        <li><img class="js-tool-logo invisible" id="bootstrap-logo" src="res/img/bootstrap-logo.svg" alt="Bootstrap logo"></li>
-                        <li><img class="js-tool-logo invisible" id="gimp-logo" src="res/img/gimp-logo.png" alt="Gimp logo"></li>
-                    </ul>
-                </div>
+             
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #d35400;"><span>Python</span></div>
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="85%">
+	<div class="skillbar-title" style="background: #2980b9;"><span>Tensorflow</span></div>
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+	<div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #2c3e50;"><span>Pytorch</span></div>
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+	<div class="skillbar-title" style="background: #46465e;"><span>C++</span></div>
+	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+	<div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #333333;"><span>Dash</span></div>
+	<div class="skillbar-bar" style="background: #525252;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="82%">
+	<div class="skillbar-title" style="background: #333353;"><span>MongoDB</span></div>
+	<div class="skillbar-bar" style="background: #525282;"></div>
+	<div class="skill-bar-percent">82%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="90%">
+	<div class="skillbar-title" style="background: #27ae60;"><span>Django</span></div>
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">90%</div>
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="95%">
+	<div class="skillbar-title" style="background: #124e8c;"><span>Flask</span></div>
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
             </div>
         </section>
 
@@ -189,51 +291,7 @@
                     </nav>
                 </div>
 
-                <div class="row">
-                    <div class="showcase-container clearfix" id="showcase-container">
-
-                        <section class="col-sm-6 filtr-item showcase-item" data-category="1, 2">
-                            <img class="img-responsive showcase-img" src="res/img/showcase_filterizr.jpg" alt="Filterizr plugin">
-                            <div class="item-desc">
-                                <h4>Filterizr</h4>
-                                <p>A jQuery plugin for filtering, sorting,shuffling and searching responsive galleries with custom CSS effects.</p>
-                                <a class="button preview-btn" href="filterizr/index.html" target="_blank">Visit</a>
-                                <a class="button github-btn" href="https://github.com/giotiskl/Filterizr" target="_blank">GitHub</a>
-                            </div>
-                        </section>
-
-                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
-                            <img class="img-responsive showcase-img" src="res/img/showcase_photocraft.jpg" alt="Photocraft theme">
-                            <div class="item-desc">
-                                <h4>Photocraft</h4>
-                                <p>Photocraft is an elegant, free Bootstrap photography-portfolio theme. Licensed under MIT.</p>
-                                <a class="button preview-btn" href="showcase/photocraft/index.html" target="_blank">Visit</a>
-                                <a class="button github-btn" href="https://github.com/giotiskl/Photocraft" target="_blank">GitHub</a>
-                            </div>
-                        </section>
-
-                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
-                            <img class="img-responsive showcase-img" src="res/img/showcase_xtremetravels.jpg" alt="XtremeTravels website">
-                            <div class="item-desc">
-                                <h4>Xtreme Travels</h4>
-                                <p>A single-pager developed for a fictitious travel agency specializing in organizing trips to wild destinations.</p>
-                                <a class="button" href="showcase/xtremetravels/index.html" target="_blank">Visit</a>
-                            </div>
-                        </section>
-
-                        <section class="col-sm-6 filtr-item showcase-item" data-category="1">
-                            <img class="img-responsive showcase-img" src="res/img/showcase_akustix.jpg" alt="Akustix website">
-                            <div class="item-desc">
-                                <h4>Akustix</h4>
-                                <p>A free Bootstrap theme for guitar manufacturers and retailers. Licensed under MIT.</p>
-                                <a class="button preview-btn" href="showcase/akustix/index.html" target="_blank">Visit</a>
-                                <a class="button github-btn" href="https://github.com/giotiskl/Akustix" target="_blank">GitHub</a>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-
-
+				
             </section>
         </div>
 
@@ -244,7 +302,7 @@
                     <h2>Get in touch</h2>
                 </div>
                 <div class="row">
-                    <form id="contact-form" method="post" action="http://formspree.io/yiotiskal@gmail.com">
+                    <form id="contact-form" method="post" action="http://formspree.io/prakharthapak@gmail.com">
                         <div class="row">
                             <input name="form-name" id="form-name" type="text" placeholder="your name" required>
                         </div>
@@ -265,7 +323,7 @@
         <!-- Footer -->
         <div class="row dark-container">
             <footer class="footer-main">
-                <p>Designed by Yiotis Kaltsikis &mdash; 2016 &copy;</p>
+                <p>Designed by Prakhar Thapak &mdash; 2018 &copy;</p>
             </footer>
         </div>
 
