@@ -1,2 +1,0 @@
-# assassinsurvivor.github.io
-portfolio
