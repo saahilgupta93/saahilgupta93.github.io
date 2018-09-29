@@ -1,7 +1,7 @@
 {
-  "name": "assassinsurvivor.github.io",
+  "name": "giotiskl.github.io",
   "version": "1.0.0",
-  "description": "Portfolio of Prakhar Thapak, Data Scientist based in Bangalore,India",
+  "description": "Portfolio of Yiotis Kaltsikis, Front End Developer based in Berlin, Germany",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/assassinsurvivor/assassinsurvivor.github.io.git"
+    "url": "git+https://github.com/giotiskl/giotiskl.github.io.git"
   },
   "keywords": [
-    "datascience",
-    "tensorflow",
-    "pytorch",
-    "scikitlearn",
-    "machinelearning",
-    "deeplearning"
+    "frontend",
+    "yiotis",
+    "kaltsikis",
+    "personal",
+    "portfolio",
+    "filterizr"
   ],
-  "author": "Prakhar Thapak		",
+  "author": "Yiotis Kaltsikis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/assassinsurvivor/assassinsurvivor.github.io/issues"
+    "url": "https://github.com/giotiskl/giotiskl.github.io/issues"
   },
-  "homepage": "https://github.com/assassinsurvivor/assassinsurvivor.github.io#readme"
+  "homepage": "https://github.com/giotiskl/giotiskl.github.io#readme"
 }
