@@ -650,6 +650,38 @@ div:hover > h3 > .icon-header {
         position: absolute;
         top: 0;
     }
+	
+	//Welcome message in header
+    .welcome-boxx {
+        @include absolute-center(50%, 50%);
+        text-align: center;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+
+        h1 {
+            opacity: 0;
+
+            @include mq-tablet {
+                padding-top: 0.5rem;
+            }
+        }
+
+        p {
+            color: white;
+            font-weight: 300;
+            font-size: 115%;
+            letter-spacing: 0.1rem;
+
+            @include mq-tablet {
+                font-size: 150%;
+            }
+        }
+    }
+
+    //particles container
+    .particles-js-canvas-el {
+        position: absolute;
+        top: 0;
+    }
 
 }
 
